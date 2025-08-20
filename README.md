@@ -29,11 +29,27 @@ Install the necessary software to interact with the hardware:
 2. Pupil Core: Install Pupil Core Capture as described on the manufacturing website (https://docs.pupil-labs.com/core/getting-started/).
 3. Intel ReaslSense D455: Install Intel RealSense ROS wrapper as explained by the manufacturer (https://github.com/IntelRealSense/realsense-ros).
 4. Download the git. It already contains the ROS2-workspace needed to interact with the system.
-5. Install all necessary dependencies.
+5. Install all necessary dependencies via requirements.txt.
+6. Go to the workspace folder and build the workspace once: `colcon build`
 
 ## Usage
+The repository contains the code of the framework and test files allowing testing certain functionalities of the system. 
 
+Test files:
+- Eye tracker interface:
+   - Test_World_video.py: Streams the world video scene of the pupil core glasses and visualizes it.
+   - Test_eyetracker_function.py: Streams fixation data from the pupil core glasses.
+   - Both are used to evaluate if the eye tracker works correctly.
+- Feature Matching:
+   - Test_Feature_Matching_Evaluation.py: Used to compare different feature detectors and matching algorithms to find a suitable solution for your application.
+- Gaze cursor:
+   - Test_Sound_Output.py: Tests if the sound output works for the system you are currently working with.
 
+Using the framework:
+ 1. Start up Pupil Core Capture and calibrate the camera.
+ 2. Start up the Intel RealSense Node with the following command: `ros2 launch realsense2_camera rs_launch.py` Don't forget to source before! `source /opt/ros/humble/setup.bash`
+ 3. Go via terminal into the cloned repository folder and start up EyeRAC with the following command: `python3 start_eyerac.py intel455`
+All necessary nodes start up automatically.
 
 ---
 
@@ -41,10 +57,8 @@ Install the necessary software to interact with the hardware:
 
 If you use this code in your research, please cite the following paper:
 
-> **Author(s)**, *"Title of Your Paper"*, Conference/Journal, Year.  
+> **Anke Fischer-Janzen, Thomas M. Wendt, Kristof Van Laerhoven**, *"Realization of an Eye-tracking-driven Control for Robotic Arms"*, Conference/Journal, 2025.  
 > DOI: [https://doi.org/xxx](https://doi.org/xxx)
-
-A machine-readable citation file is included as [`CITATION.cff`](./CITATION.cff).
 
 ---
 
