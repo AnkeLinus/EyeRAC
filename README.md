@@ -53,13 +53,6 @@ All necessary nodes start up automatically.
 
 ---
 
-## Citation
-
-If you use this code in your research, please cite the following paper:
-
-> **Anke Fischer-Janzen, Thomas M. Wendt, Kristof Van Laerhoven**, *"Realization of an Eye-tracking-driven Control for Robotic Arms"*, Conference/Journal, 2025.  
-> DOI: [https://doi.org/xxx](https://doi.org/xxx)
-
 ---
 
 ## License
