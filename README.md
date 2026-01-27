@@ -52,6 +52,24 @@ Using the framework:
 All necessary nodes start up automatically.
 
 ---
+## Cite this
+
+If you use this repository for your own research, please cite: 
+Anke Fischer-Janzen and Thomas M. Wendt and Kristof Van Laerhoven. Eye-Tracking-Driven Control in Daily Task Assistance for Assistive Robotic Arms, 	arXiv:2601.17404 [cs.RO], doi: 
+https://doi.org/10.48550/arXiv.2601.17404, 2026.
+
+```
+@misc{fischerjanzen2026eyetrackingdrivencontroldailytask,
+      title={Eye-Tracking-Driven Control in Daily Task Assistance for Assistive Robotic Arms}, 
+      author={Anke Fischer-Janzen and Thomas M. Wendt and Kristof Van Laerhoven},
+      year={2026},
+      eprint={2601.17404},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2601.17404}, 
+}
+```
+Thank you!
 
 ---
 
